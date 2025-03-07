@@ -22,9 +22,12 @@ public class ContoBancario {
 
     public void deposita(BigDecimal importo) {
         this.saldo = this.saldo.add(importo);
+        System.out.println("Deposito effettuato con successo");
     }
 
     public void preleva(BigDecimal importo) {
         this.saldo = this.saldo.subtract(importo);
+        System.out.println("Prelievo effettuato con successo");
+
     }
 }
